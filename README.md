@@ -1,6 +1,6 @@
 # blog
 
-## 更新子模块
+## 主题
 ```
-git submodule update --init --recursive
+git submodule add https://github.com/ycchi0/hugo-PaperMod.git themes/PaperMod
 ```
