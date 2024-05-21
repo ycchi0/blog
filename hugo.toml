@@ -2,3 +2,4 @@ baseURL = 'https://ycchi0.github.io/'
 languageCode = 'zh-CN'
 title = 'Ycchi0 Blog'
 theme = 'PaperMod'
+
