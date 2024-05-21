@@ -7,7 +7,8 @@ TARGET_DIR="../ycchi0.github.io"
 mkdir -p "$TARGET_DIR"
 
 # 进入你的Hugo项目目录，这里需要替换为你的实际项目路径
-rm -rf public
+find public -mindepth 1 -delete
+rmdir public
 # 使用Hugo生成静态网页到public目录
 hugo
 
