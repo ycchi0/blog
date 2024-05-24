@@ -181,3 +181,4 @@ ychi.site/blog 有 Cookie b=c
 
 ### Secure 安全标志
 Secure 限定了只有在使用了 https 而不是 http 的情况下才可以发送给服务端
+./
