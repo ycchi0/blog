@@ -7,6 +7,7 @@ if [ $# -eq 0 ]; then
   echo "Usage: quick.sh {d|n}"
   echo "  d: Run deploy.sh script"
   echo "  n: Run new.sh script"
+  echo "  p: Run push.sh script"
   exit 1
 fi
 
@@ -32,6 +33,16 @@ case $1 in
       "$SCRIPT_DIR/new.sh"
     else
       echo "Error: new.sh does not exist in $SCRIPT_DIR"
+      exit 3
+    fi
+    ;;
+  p)
+    # Run new.sh
+    if [ -f "$SCRIPT_DIR/push.sh" ]; then
+      echo "Running push.sh..."
+      "$SCRIPT_DIR/push.sh"
+    else
+      echo "Error: push.sh does not exist in $SCRIPT_DIR"
       exit 3
     fi
     ;;
