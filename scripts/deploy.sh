@@ -26,7 +26,7 @@ if [ -d "public" ]; then
 
     # 推送到远程仓库的main分支
     echo $REMOTE_NAME $BRANCH_NAME
-    git push "$REMOTE_NAME" "$BRANCH_NAME"
+    git push origin main
 
 else
     echo "Error: 'public' directory does not exist."
